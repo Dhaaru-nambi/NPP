@@ -1,0 +1,1271 @@
+2024-07-15T09:40:14.142+05:30  INFO 6100 --- [npp] [restartedMain] com.project.npp.NppApplication           : Starting NppApplication using Java 17.0.9 with PID 6100 (D:\Backend-Final\npp\target\classes started by dhaarani.a in D:\Backend-Final\npp)
+2024-07-15T09:40:14.160+05:30  INFO 6100 --- [npp] [restartedMain] com.project.npp.NppApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-07-15T09:40:14.277+05:30  INFO 6100 --- [npp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-15T09:40:14.278+05:30  INFO 6100 --- [npp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-15T09:40:16.231+05:30  INFO 6100 --- [npp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-15T09:40:16.409+05:30  INFO 6100 --- [npp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 160 ms. Found 8 JPA repository interfaces.
+2024-07-15T09:40:17.702+05:30  INFO 6100 --- [npp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-15T09:40:17.725+05:30  INFO 6100 --- [npp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-15T09:40:17.725+05:30  INFO 6100 --- [npp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-15T09:40:17.835+05:30  INFO 6100 --- [npp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-15T09:40:17.836+05:30  INFO 6100 --- [npp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3556 ms
+2024-07-15T09:40:18.211+05:30  INFO 6100 --- [npp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-15T09:40:18.404+05:30  INFO 6100 --- [npp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-15T09:40:18.513+05:30  INFO 6100 --- [npp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-15T09:40:19.292+05:30  INFO 6100 --- [npp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-15T09:40:19.358+05:30  INFO 6100 --- [npp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-15T09:40:20.000+05:30  INFO 6100 --- [npp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@335265e7
+2024-07-15T09:40:20.006+05:30  INFO 6100 --- [npp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-15T09:40:20.122+05:30  WARN 6100 --- [npp] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-15T09:40:23.154+05:30  INFO 6100 --- [npp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-15T09:40:23.462+05:30  INFO 6100 --- [npp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-15T09:40:24.758+05:30  INFO 6100 --- [npp] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-15T09:40:24.761+05:30  WARN 6100 --- [npp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-15T09:40:25.296+05:30  WARN 6100 --- [npp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-15T09:40:26.156+05:30  INFO 6100 --- [npp] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ce802b9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@387d568d, org.springframework.security.web.context.SecurityContextHolderFilter@1dc0f8af, org.springframework.security.web.header.HeaderWriterFilter@786e3912, org.springframework.web.filter.CorsFilter@287e3b4d, org.springframework.security.web.authentication.logout.LogoutFilter@625a4e57, com.project.npp.security.jwt.AuthTokenFilter@5a5654d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c1ebefd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@401987b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21356db0, org.springframework.security.web.session.SessionManagementFilter@1321f23c, org.springframework.security.web.access.ExceptionTranslationFilter@768396a0, org.springframework.security.web.access.intercept.AuthorizationFilter@44c00233]
+2024-07-15T09:40:26.974+05:30  INFO 6100 --- [npp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-15T09:40:27.092+05:30  INFO 6100 --- [npp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-15T09:40:27.114+05:30  INFO 6100 --- [npp] [restartedMain] com.project.npp.NppApplication           : Started NppApplication in 13.897 seconds (process running for 15.705)
+2024-07-15T09:41:17.135+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-15T09:41:17.136+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-15T09:41:17.141+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-07-15T09:41:19.781+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1652 ms
+2024-07-15T09:41:40.425+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.project.npp.controller.AuthController  : signin
+2024-07-15T09:41:41.230+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:45:48.591+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:45:48.636+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-1] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T09:45:48.636+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-1] c.p.n.c.JioComplianceOfficerController   : Verification details
+2024-07-15T09:46:13.888+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:46:13.909+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-3] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T09:46:13.910+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-3] c.p.n.c.JioComplianceOfficerController   : Verification details
+2024-07-15T09:47:38.520+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:47:38.628+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T09:47:38.628+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.n.c.JioComplianceOfficerController   : Verification details updated successfully !!
+2024-07-15T09:48:14.749+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-5] c.project.npp.controller.AuthController  : signin
+2024-07-15T09:48:14.761+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:48:55.975+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:48:55.988+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Submit port request
+2024-07-15T09:48:56.002+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T09:48:56.092+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.PortRequestServiceImpl   : Port request added successfully
+2024-07-15T09:48:56.092+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Portrequest added successfully!
+2024-07-15T09:48:56.113+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Log added successfully!
+2024-07-15T09:49:36.999+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.project.npp.controller.AuthController  : signin
+2024-07-15T09:49:37.012+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:50:18.492+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:50:18.500+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-8] c.p.n.c.ComplianceOfficerController      : Update log
+2024-07-15T09:50:18.520+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T09:50:18.524+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T09:50:18.548+05:30 ERROR 6100 --- [npp] [http-nio-8080-exec-8] c.p.n.u.AirtelVerificationDetailsService : No Verification Details Found
+2024-07-15T09:50:18.560+05:30  WARN 6100 --- [npp] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.VerificationDetailsNotFoundException: No Verification Details Found]
+2024-07-15T09:50:37.764+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:50:37.798+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-9] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T09:50:37.799+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-9] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T09:51:30.807+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:51:30.813+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-10] c.p.n.c.ComplianceOfficerController      : Get log
+2024-07-15T09:51:30.824+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-10] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T09:51:30.825+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-10] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T09:53:32.525+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-3] c.project.npp.controller.AuthController  : signin
+2024-07-15T09:53:32.534+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:53:43.735+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-2] c.project.npp.controller.AuthController  : signin
+2024-07-15T09:53:43.743+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:54:13.332+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-1] c.project.npp.controller.AuthController  : signin
+2024-07-15T09:54:13.344+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:55:03.379+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:55:03.386+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.n.c.CustomerServiceController        : Submit port request
+2024-07-15T09:55:03.398+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T09:55:03.427+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.PortRequestServiceImpl   : Port request added successfully
+2024-07-15T09:55:03.428+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.n.c.CustomerServiceController        : Portrequest added successfully!
+2024-07-15T09:55:03.446+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.n.c.CustomerServiceController        : Log added successfully!
+2024-07-15T09:55:28.055+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:55:28.060+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.project.npp.controller.AuthController  : signin
+2024-07-15T09:55:28.073+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:55:59.669+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:55:59.674+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.n.c.ComplianceOfficerController      : Update log
+2024-07-15T09:55:59.689+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T09:55:59.694+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T09:55:59.701+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T09:55:59.756+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T09:55:59.786+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T09:55:59.790+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T09:55:59.796+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T09:55:59.799+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T09:55:59.836+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-6] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T09:56:30.800+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:56:30.814+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T09:56:30.820+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T09:56:30.824+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T09:56:30.838+05:30 ERROR 6100 --- [npp] [http-nio-8080-exec-5] c.p.n.u.JioVerificationDetailsService    : No Verification Details Found
+2024-07-15T09:56:30.841+05:30  WARN 6100 --- [npp] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.VerificationDetailsNotFoundException: No Verification Details Found]
+2024-07-15T09:57:00.356+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T09:57:00.371+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-8] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T09:57:00.376+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T09:57:00.381+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T09:57:00.387+05:30 ERROR 6100 --- [npp] [http-nio-8080-exec-8] c.p.n.u.JioVerificationDetailsService    : No Verification Details Found
+2024-07-15T09:57:00.390+05:30  WARN 6100 --- [npp] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.VerificationDetailsNotFoundException: No Verification Details Found]
+2024-07-15T09:58:03.061+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:02:40.364+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:02:40.378+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-2] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:02:40.383+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:02:40.387+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:02:40.395+05:30 ERROR 6100 --- [npp] [http-nio-8080-exec-2] c.p.n.u.JioVerificationDetailsService    : No Verification Details Found
+2024-07-15T10:02:40.398+05:30  WARN 6100 --- [npp] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.VerificationDetailsNotFoundException: No Verification Details Found]
+2024-07-15T10:03:52.594+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:03:52.607+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:03:52.612+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:03:52.618+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:03:52.625+05:30 ERROR 6100 --- [npp] [http-nio-8080-exec-4] c.p.n.u.AirtelVerificationDetailsService : No Verification Details Found
+2024-07-15T10:03:52.628+05:30  WARN 6100 --- [npp] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.VerificationDetailsNotFoundException: No Verification Details Found]
+2024-07-15T10:04:00.375+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:04:00.386+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:04:00.392+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:04:00.396+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:04:00.402+05:30 ERROR 6100 --- [npp] [http-nio-8080-exec-7] c.p.n.u.JioVerificationDetailsService    : No Verification Details Found
+2024-07-15T10:04:00.405+05:30  WARN 6100 --- [npp] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.VerificationDetailsNotFoundException: No Verification Details Found]
+2024-07-15T10:06:49.886+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:06:49.916+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-5] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:06:49.916+05:30  INFO 6100 --- [npp] [http-nio-8080-exec-5] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:11:20.908+05:30  INFO 6100 --- [npp] [RMI TCP Connection(39)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-15T10:11:20.963+05:30  INFO 6100 --- [npp] [RMI TCP Connection(39)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-15T10:11:20.970+05:30  INFO 6100 --- [npp] [RMI TCP Connection(39)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-15T10:11:20.980+05:30  INFO 6100 --- [npp] [RMI TCP Connection(39)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-15T10:12:06.222+05:30  INFO 17312 --- [npp] [restartedMain] com.project.npp.NppApplication           : Starting NppApplication using Java 17.0.9 with PID 17312 (D:\Backend-Final\npp\target\classes started by dhaarani.a in D:\Backend-Final\npp)
+2024-07-15T10:12:06.225+05:30  INFO 17312 --- [npp] [restartedMain] com.project.npp.NppApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-07-15T10:12:06.305+05:30  INFO 17312 --- [npp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-15T10:12:06.305+05:30  INFO 17312 --- [npp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-15T10:12:07.850+05:30  INFO 17312 --- [npp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-15T10:12:08.045+05:30  INFO 17312 --- [npp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 174 ms. Found 8 JPA repository interfaces.
+2024-07-15T10:12:09.023+05:30  INFO 17312 --- [npp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-15T10:12:09.041+05:30  INFO 17312 --- [npp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-15T10:12:09.041+05:30  INFO 17312 --- [npp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-15T10:12:09.165+05:30  INFO 17312 --- [npp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-15T10:12:09.166+05:30  INFO 17312 --- [npp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2859 ms
+2024-07-15T10:12:09.407+05:30  INFO 17312 --- [npp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-15T10:12:09.493+05:30  INFO 17312 --- [npp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-15T10:12:09.545+05:30  INFO 17312 --- [npp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-15T10:12:10.114+05:30  INFO 17312 --- [npp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-15T10:12:10.170+05:30  INFO 17312 --- [npp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-15T10:12:10.702+05:30  INFO 17312 --- [npp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13842b44
+2024-07-15T10:12:10.705+05:30  INFO 17312 --- [npp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-15T10:12:10.775+05:30  WARN 17312 --- [npp] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-15T10:12:12.557+05:30  INFO 17312 --- [npp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-15T10:12:14.351+05:30  INFO 17312 --- [npp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-15T10:12:15.024+05:30  INFO 17312 --- [npp] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-15T10:12:15.026+05:30  WARN 17312 --- [npp] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-15T10:12:15.274+05:30  WARN 17312 --- [npp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-15T10:12:15.690+05:30  INFO 17312 --- [npp] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30464ef5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4481afd1, org.springframework.security.web.context.SecurityContextHolderFilter@2a1d66c0, org.springframework.security.web.header.HeaderWriterFilter@3dfeb34c, org.springframework.web.filter.CorsFilter@4725a1aa, org.springframework.security.web.authentication.logout.LogoutFilter@61c8da4e, com.project.npp.security.jwt.AuthTokenFilter@3a7c8ace, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29d2e5ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@657105af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2144aa2b, org.springframework.security.web.session.SessionManagementFilter@6b9d959a, org.springframework.security.web.access.ExceptionTranslationFilter@f8f517e, org.springframework.security.web.access.intercept.AuthorizationFilter@549414f8]
+2024-07-15T10:12:16.158+05:30  INFO 17312 --- [npp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-15T10:12:16.244+05:30  INFO 17312 --- [npp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-15T10:12:16.267+05:30  INFO 17312 --- [npp] [restartedMain] com.project.npp.NppApplication           : Started NppApplication in 10.798 seconds (process running for 12.755)
+2024-07-15T10:15:19.050+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-15T10:15:19.051+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-15T10:15:19.056+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-07-15T10:15:19.700+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:15:19.713+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.security.jwt.AuthTokenFilter     : Cannot set user authentication: {}
+
+org.springframework.security.core.userdetails.UsernameNotFoundException: User Not Found with username: ComplianceOfficer
+	at com.project.npp.security.service.UserDetailsServiceImpl.lambda$0(UserDetailsServiceImpl.java:22) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.project.npp.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:22) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.8.jar:6.1.8]
+	at com.project.npp.security.service.UserDetailsServiceImpl$$SpringCGLIB$$0.loadUserByUsername(<generated>) ~[classes/:na]
+	at com.project.npp.security.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-15T10:15:19.961+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:15:19.984+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:15:20.278+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:15:20.292+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:15:20.423+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User added successfully !!
+2024-07-15T10:15:20.424+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.controller.AuthController  : User registered successfully!
+2024-07-15T10:16:13.963+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:16:13.966+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.security.jwt.AuthTokenFilter     : Cannot set user authentication: {}
+
+org.springframework.security.core.userdetails.UsernameNotFoundException: User Not Found with username: ComplianceOfficer
+	at com.project.npp.security.service.UserDetailsServiceImpl.lambda$0(UserDetailsServiceImpl.java:22) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.project.npp.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:22) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.8.jar:6.1.8]
+	at com.project.npp.security.service.UserDetailsServiceImpl$$SpringCGLIB$$0.loadUserByUsername(<generated>) ~[classes/:na]
+	at com.project.npp.security.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-15T10:16:13.971+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:16:13.976+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:16:14.227+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:16:14.232+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:16:14.252+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User added successfully !!
+2024-07-15T10:16:14.253+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.project.npp.controller.AuthController  : User registered successfully!
+2024-07-15T10:16:51.552+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:16:51.561+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:16:51.823+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:16:51.828+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.OperatorServiceImpl      : Operator not found
+2024-07-15T10:16:51.836+05:30  WARN 17312 --- [npp] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.OperatorNotFoundException: Operator not found]
+2024-07-15T10:17:09.022+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:17:09.297+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:17:15.105+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:17:15.112+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.controller.SystemAdminController   : Get all Users
+2024-07-15T10:17:15.138+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : Role found
+2024-07-15T10:17:15.139+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.controller.SystemAdminController   : User found
+2024-07-15T10:17:17.468+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:17:17.472+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.controller.SystemAdminController   : Get all Operators
+2024-07-15T10:17:17.483+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:17:17.483+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.controller.SystemAdminController   : Operator found
+2024-07-15T10:17:25.512+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:17:25.521+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.controller.SystemAdminController   : Add operator
+2024-07-15T10:17:25.521+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.OperatorServiceImpl      : Operator added successfully!!
+2024-07-15T10:17:25.538+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.controller.SystemAdminController   : Operator added successfully!
+2024-07-15T10:17:25.578+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:17:25.581+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.controller.SystemAdminController   : Get all Operators
+2024-07-15T10:17:25.592+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:17:25.593+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.controller.SystemAdminController   : Operator found
+2024-07-15T10:17:57.672+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:17:57.678+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.controller.SystemAdminController   : Add operator
+2024-07-15T10:17:57.678+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.OperatorServiceImpl      : Operator added successfully!!
+2024-07-15T10:17:57.702+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.controller.SystemAdminController   : Operator added successfully!
+2024-07-15T10:17:57.742+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:17:57.746+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.controller.SystemAdminController   : Get all Operators
+2024-07-15T10:17:57.754+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:17:57.755+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.controller.SystemAdminController   : Operator found
+2024-07-15T10:18:09.643+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:18:09.648+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.controller.SystemAdminController   : Add operator
+2024-07-15T10:18:09.648+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator added successfully!!
+2024-07-15T10:18:09.677+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.controller.SystemAdminController   : Operator added successfully!
+2024-07-15T10:18:09.716+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:18:09.720+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.controller.SystemAdminController   : Get all Operators
+2024-07-15T10:18:09.728+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:18:09.728+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.controller.SystemAdminController   : Operator found
+2024-07-15T10:18:17.517+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:18:17.521+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.controller.SystemAdminController   : Get all Users
+2024-07-15T10:18:17.537+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : Role found
+2024-07-15T10:18:17.538+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.controller.SystemAdminController   : User found
+2024-07-15T10:18:29.994+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:18:30.000+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:18:30.249+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:18:30.255+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:18:30.279+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User added successfully !!
+2024-07-15T10:18:30.279+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.project.npp.controller.AuthController  : User registered successfully!
+2024-07-15T10:18:45.615+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:18:45.620+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:18:45.863+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:18:45.868+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:18:45.905+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User added successfully !!
+2024-07-15T10:18:45.906+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.controller.AuthController  : User registered successfully!
+2024-07-15T10:19:07.329+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:19:07.334+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:19:07.585+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:19:07.590+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:19:07.604+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User added successfully !!
+2024-07-15T10:19:07.604+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.project.npp.controller.AuthController  : User registered successfully!
+2024-07-15T10:19:25.486+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:19:25.491+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:19:25.735+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:19:25.740+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:19:25.762+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User added successfully !!
+2024-07-15T10:19:25.762+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.project.npp.controller.AuthController  : User registered successfully!
+2024-07-15T10:19:43.389+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:19:43.395+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:19:43.644+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:19:43.650+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:19:43.690+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User added successfully !!
+2024-07-15T10:19:43.691+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.project.npp.controller.AuthController  : User registered successfully!
+2024-07-15T10:19:54.749+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:19:54.754+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:19:55.000+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:19:55.005+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:19:55.028+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User added successfully !!
+2024-07-15T10:19:55.029+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.project.npp.controller.AuthController  : User registered successfully!
+2024-07-15T10:20:09.810+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:20:09.815+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:20:10.063+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:20:10.068+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:20:10.091+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User added successfully !!
+2024-07-15T10:20:10.091+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.project.npp.controller.AuthController  : User registered successfully!
+2024-07-15T10:20:28.544+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:20:28.549+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:20:28.794+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:20:28.799+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:20:28.824+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User added successfully !!
+2024-07-15T10:20:28.824+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.project.npp.controller.AuthController  : User registered successfully!
+2024-07-15T10:20:50.300+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:20:50.315+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:20:52.077+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:20:52.082+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.controller.SystemAdminController   : Get all Users
+2024-07-15T10:20:52.109+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : Role found
+2024-07-15T10:20:52.109+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.controller.SystemAdminController   : User found
+2024-07-15T10:21:00.651+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:21:00.672+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:21:00.678+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:21:00.683+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:21:00.687+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:21:00.727+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : Role updated successfully!
+2024-07-15T10:21:00.728+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.controller.SystemAdminController   : Role updated successfully!
+2024-07-15T10:21:00.778+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:21:00.782+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.controller.SystemAdminController   : Get all Users
+2024-07-15T10:21:00.808+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : Role found
+2024-07-15T10:21:00.808+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.controller.SystemAdminController   : User found
+2024-07-15T10:21:10.621+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:21:10.632+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:21:10.637+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:21:10.641+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:21:10.645+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:21:10.668+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : Role updated successfully!
+2024-07-15T10:21:10.668+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.controller.SystemAdminController   : Role updated successfully!
+2024-07-15T10:21:10.713+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:21:10.716+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.controller.SystemAdminController   : Get all Users
+2024-07-15T10:21:10.743+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : Role found
+2024-07-15T10:21:10.743+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.controller.SystemAdminController   : User found
+2024-07-15T10:21:36.878+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:21:36.888+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:21:36.893+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:21:36.898+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:21:36.903+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:21:36.927+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : Role updated successfully!
+2024-07-15T10:21:36.927+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.controller.SystemAdminController   : Role updated successfully!
+2024-07-15T10:21:36.971+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:21:36.975+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.controller.SystemAdminController   : Get all Users
+2024-07-15T10:21:37.000+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : Role found
+2024-07-15T10:21:37.001+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.controller.SystemAdminController   : User found
+2024-07-15T10:22:00.750+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:22:00.754+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.controller.SystemAdminController   : Get all Users
+2024-07-15T10:22:00.784+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : Role found
+2024-07-15T10:22:00.785+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.controller.SystemAdminController   : User found
+2024-07-15T10:22:31.325+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:22:31.334+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:22:31.338+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:22:31.343+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:22:31.349+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:22:31.371+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : Role updated successfully!
+2024-07-15T10:22:31.372+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.controller.SystemAdminController   : Role updated successfully!
+2024-07-15T10:22:31.414+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:22:31.418+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.controller.SystemAdminController   : Get all Users
+2024-07-15T10:22:31.450+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : Role found
+2024-07-15T10:22:31.450+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.controller.SystemAdminController   : User found
+2024-07-15T10:25:22.025+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:25:22.038+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:25:25.940+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:25:25.943+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:25:25.956+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.CustomerServiceImpl      : Customer not found
+2024-07-15T10:25:25.959+05:30  WARN 17312 --- [npp] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.CustomerNotFoundException: Customer not found]
+2024-07-15T10:26:15.686+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:26:15.691+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:26:15.699+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:26:15.699+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-4] c.project.npp.controller.AuthController  : Error: Username is already taken!
+2024-07-15T10:26:37.407+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:26:37.413+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:26:37.424+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:26:59.036+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:26:59.820+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:26:59.821+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] .p.n.c.AirtelComplianceOfficerController : Verification details added successfully !!
+2024-07-15T10:27:22.987+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:27:22.993+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:27:23.004+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:27:48.481+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:27:49.209+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T10:27:49.210+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.JioComplianceOfficerController   : Verification details added successfully !!
+2024-07-15T10:29:04.090+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:29:04.100+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.c.CustomerServiceController        : Add customer
+2024-07-15T10:29:04.104+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:29:04.108+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.project.npp.controller.CustomerServiceController.addCustomer(CustomerServiceController.java:76) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at com.project.npp.security.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-15T10:29:15.621+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:29:15.624+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:29:15.632+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.CustomerServiceImpl      : Customer not found
+2024-07-15T10:29:15.635+05:30  WARN 17312 --- [npp] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.CustomerNotFoundException: Customer not found]
+2024-07-15T10:29:23.067+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:29:23.071+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.c.CustomerServiceController        : Add customer
+2024-07-15T10:29:23.075+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:29:23.076+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.project.npp.controller.CustomerServiceController.addCustomer(CustomerServiceController.java:76) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at com.project.npp.security.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-15T10:31:03.777+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:31:03.781+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:31:03.788+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.CustomerServiceImpl      : Customer not found
+2024-07-15T10:31:03.790+05:30  WARN 17312 --- [npp] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.CustomerNotFoundException: Customer not found]
+2024-07-15T10:32:29.780+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:32:29.784+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:32:29.794+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.CustomerServiceImpl      : Customer not found
+2024-07-15T10:32:29.796+05:30  WARN 17312 --- [npp] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.CustomerNotFoundException: Customer not found]
+2024-07-15T10:32:43.484+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:32:43.488+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.CustomerServiceController        : Add customer
+2024-07-15T10:32:43.493+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:32:43.495+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.project.npp.controller.CustomerServiceController.addCustomer(CustomerServiceController.java:76) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at com.project.npp.security.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-15T10:32:47.105+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:32:47.108+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:32:47.118+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.CustomerServiceImpl      : Customer not found
+2024-07-15T10:32:47.120+05:30  WARN 17312 --- [npp] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.CustomerNotFoundException: Customer not found]
+2024-07-15T10:33:22.777+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:33:22.787+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.PortRequestServiceImpl   : Port request not found
+2024-07-15T10:33:22.790+05:30  WARN 17312 --- [npp] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.PortRequestNotFoundException: Port request found]
+2024-07-15T10:33:23.785+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:33:23.789+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:33:23.797+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.CustomerServiceImpl      : Customer not found
+2024-07-15T10:33:23.799+05:30  WARN 17312 --- [npp] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.CustomerNotFoundException: Customer not found]
+2024-07-15T10:34:53.083+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:34:53.088+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Add customer
+2024-07-15T10:34:53.095+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:34:53.100+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:34:53.105+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:34:53.109+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:34:53.113+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:34:53.118+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:34:53.122+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:34:53.138+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : Role updated successfully!
+2024-07-15T10:34:53.150+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:34:53.151+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Customer added successfully!
+2024-07-15T10:34:54.756+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:34:54.760+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:34:54.773+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:34:54.774+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:35:51.347+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:35:51.351+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.CustomerServiceController        : Add customer
+2024-07-15T10:35:51.358+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:35:51.362+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:35:51.366+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:35:51.369+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:35:51.373+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:35:51.377+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:35:51.381+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:35:51.407+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : Role updated successfully!
+2024-07-15T10:35:51.420+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:35:51.420+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.CustomerServiceController        : Customer added successfully!
+2024-07-15T10:35:52.825+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:35:52.828+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:35:52.840+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:35:52.840+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:36:32.643+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:36:32.648+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.CustomerServiceController        : Add customer
+2024-07-15T10:36:32.655+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:36:32.660+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:36:32.662+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:36:32.666+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:36:32.670+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:36:32.673+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:36:32.676+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:36:32.693+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : Role updated successfully!
+2024-07-15T10:36:32.707+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:36:32.708+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.CustomerServiceController        : Customer added successfully!
+2024-07-15T10:36:34.131+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:36:34.134+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:36:34.146+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:36:34.147+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:37:24.442+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:37:24.447+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.CustomerServiceController        : Add customer
+2024-07-15T10:37:24.455+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:37:24.458+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:37:24.462+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:37:24.465+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:37:24.469+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:37:24.471+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.project.npp.service.RoleServiceImpl    : Role found
+2024-07-15T10:37:24.474+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:37:24.511+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : Role updated successfully!
+2024-07-15T10:37:24.525+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:37:24.526+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.CustomerServiceController        : Customer added successfully!
+2024-07-15T10:37:25.963+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:37:25.966+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:37:25.978+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:37:25.978+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:37:29.492+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:37:29.502+05:30 ERROR 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.PortRequestServiceImpl   : Port request not found
+2024-07-15T10:37:29.505+05:30  WARN 17312 --- [npp] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.npp.exceptions.PortRequestNotFoundException: Port request found]
+2024-07-15T10:37:41.177+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:37:41.187+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Submit port request
+2024-07-15T10:37:41.195+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:37:41.213+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.PortRequestServiceImpl   : Port request added successfully
+2024-07-15T10:37:41.213+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Portrequest added successfully!
+2024-07-15T10:37:41.227+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Log added successfully!
+2024-07-15T10:37:42.608+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:37:42.630+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T10:37:42.630+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Portrequest found
+2024-07-15T10:37:51.972+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:37:51.976+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.CustomerServiceController        : Submit port request
+2024-07-15T10:37:51.985+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:37:52.013+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.PortRequestServiceImpl   : Port request added successfully
+2024-07-15T10:37:52.013+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.CustomerServiceController        : Portrequest added successfully!
+2024-07-15T10:37:52.028+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.CustomerServiceController        : Log added successfully!
+2024-07-15T10:37:53.139+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:37:53.157+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T10:37:53.157+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.CustomerServiceController        : Portrequest found
+2024-07-15T10:38:03.815+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:38:03.821+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.CustomerServiceController        : Submit port request
+2024-07-15T10:38:03.827+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:38:03.855+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.PortRequestServiceImpl   : Port request added successfully
+2024-07-15T10:38:03.855+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.CustomerServiceController        : Portrequest added successfully!
+2024-07-15T10:38:03.867+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.CustomerServiceController        : Log added successfully!
+2024-07-15T10:38:05.104+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:38:05.123+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T10:38:05.124+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.c.CustomerServiceController        : Portrequest found
+2024-07-15T10:38:11.884+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:38:11.889+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.CustomerServiceController        : Submit port request
+2024-07-15T10:38:11.896+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:38:11.923+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.PortRequestServiceImpl   : Port request added successfully
+2024-07-15T10:38:11.923+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.CustomerServiceController        : Portrequest added successfully!
+2024-07-15T10:38:11.934+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.CustomerServiceController        : Log added successfully!
+2024-07-15T10:38:13.794+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:38:13.816+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T10:38:13.816+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.c.CustomerServiceController        : Portrequest found
+2024-07-15T10:38:18.076+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:38:18.079+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:38:18.091+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:38:18.091+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:38:20.108+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:38:20.115+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Get customer by ID
+2024-07-15T10:38:20.124+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:38:20.125+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:38:25.823+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:38:25.827+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Get customer by ID
+2024-07-15T10:38:25.834+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:38:25.834+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:39:12.777+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:39:12.780+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:39:12.794+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:39:12.794+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:39:15.069+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:39:15.072+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:39:15.083+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:39:15.084+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:39:21.820+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:39:21.823+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.CustomerServiceController        : Get customer by ID
+2024-07-15T10:39:21.829+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:39:21.829+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:39:55.359+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:39:55.363+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:39:55.376+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:39:55.376+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:39:58.854+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:39:58.857+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.CustomerServiceController        : Get customer by ID
+2024-07-15T10:39:58.864+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:39:58.865+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:40:01.304+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:40:01.307+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.c.CustomerServiceController        : Get customer by ID
+2024-07-15T10:40:01.313+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:40:01.314+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:40:09.636+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:40:09.644+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.c.CustomerServiceController        : Update customer
+2024-07-15T10:40:09.647+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:40:09.650+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:40:09.677+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:40:09.677+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.c.CustomerServiceController        : Customer updated successfully!
+2024-07-15T10:40:09.717+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:40:09.721+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:40:09.733+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:40:09.733+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:40:19.503+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:40:19.507+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Get customer by ID
+2024-07-15T10:40:19.515+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:40:19.516+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:40:24.044+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:40:24.048+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.CustomerServiceController        : Update customer
+2024-07-15T10:40:24.053+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:40:24.057+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:40:24.077+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:40:24.077+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.CustomerServiceController        : Customer updated successfully!
+2024-07-15T10:40:24.113+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:40:24.117+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T10:40:24.129+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:40:24.129+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T10:40:34.744+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:40:34.761+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T10:40:34.761+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.CustomerServiceController        : Portrequest found
+2024-07-15T10:40:58.224+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:40:58.232+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:41:01.308+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:41:01.336+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:41:01.337+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:41:24.357+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:41:24.361+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.c.ComplianceOfficerController      : Get log
+2024-07-15T10:41:24.371+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:41:24.371+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:41:41.530+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:41:41.543+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:41:41.547+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:41:41.551+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:41:41.557+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:41:41.559+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.ComplianceOfficerController      : Verification details
+2024-07-15T10:41:43.976+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:41:44.000+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:41:44.000+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:41:51.525+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:41:51.551+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:41:51.551+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:41:55.728+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:41:55.740+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:41:55.744+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:41:55.748+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:41:55.754+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T10:41:55.755+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.ComplianceOfficerController      : Verification details
+2024-07-15T10:41:58.680+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:41:58.684+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.ComplianceOfficerController      : Update log
+2024-07-15T10:41:58.694+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:41:58.697+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:41:58.703+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T10:41:58.731+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:41:58.748+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:41:58.750+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T10:41:58.750+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:41:58.793+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:41:58.816+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:41:58.817+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:42:00.475+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:42:00.486+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:42:00.489+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:00.492+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:00.499+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:42:00.500+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.ComplianceOfficerController      : Verification details
+2024-07-15T10:42:01.393+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:42:01.397+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.c.ComplianceOfficerController      : Update log
+2024-07-15T10:42:01.406+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:01.411+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:01.417+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:42:01.457+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:42:01.473+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:42:01.475+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T10:42:01.475+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:42:01.516+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:42:01.539+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:42:01.540+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:42:43.677+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:42:43.690+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:42:43.694+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:43.697+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:43.702+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T10:42:43.704+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.ComplianceOfficerController      : Verification details
+2024-07-15T10:42:44.651+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:42:44.655+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.ComplianceOfficerController      : Update log
+2024-07-15T10:42:44.664+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:44.668+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:44.673+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T10:42:44.720+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:42:44.738+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:42:44.740+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T10:42:44.743+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:44.747+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:44.778+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:42:44.824+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:42:44.846+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:42:44.846+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:42:46.467+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:42:46.476+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:42:46.480+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:46.484+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:46.489+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:42:46.489+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.ComplianceOfficerController      : Verification details
+2024-07-15T10:42:47.356+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:42:47.360+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.c.ComplianceOfficerController      : Update log
+2024-07-15T10:42:47.372+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:47.376+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:47.382+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:42:47.398+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:42:47.416+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T10:42:47.419+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T10:42:47.422+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:47.425+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T10:42:47.439+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:42:47.475+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:42:47.496+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T10:42:47.497+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T10:43:06.488+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.project.npp.controller.AuthController  : signin
+2024-07-15T10:43:06.497+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:43:08.933+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:43:08.945+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:43:08.945+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] .p.n.c.AirtelComplianceOfficerController : Verification details
+2024-07-15T10:43:58.565+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:43:58.578+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:43:58.578+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] .p.n.c.AirtelComplianceOfficerController : Verification details
+2024-07-15T10:51:00.799+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:51:00.809+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:51:00.810+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] .p.n.c.AirtelComplianceOfficerController : Verification details
+2024-07-15T10:51:54.797+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:51:54.814+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:51:54.814+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] .p.n.c.AirtelComplianceOfficerController : Verification details
+2024-07-15T10:53:47.791+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:53:47.802+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:53:47.802+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] .p.n.c.AirtelComplianceOfficerController : Verification details
+2024-07-15T10:54:04.618+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T10:54:04.630+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T10:54:04.631+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] .p.n.c.AirtelComplianceOfficerController : Verification details
+2024-07-15T11:00:55.794+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:00:55.807+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T11:00:55.808+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] .p.n.c.AirtelComplianceOfficerController : Verification details
+2024-07-15T11:01:33.781+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:01:33.790+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T11:01:33.790+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] .p.n.c.AirtelComplianceOfficerController : Verification details
+2024-07-15T11:02:26.103+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:02:26.130+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T11:02:26.130+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] .p.n.c.AirtelComplianceOfficerController : Verification details updated successfully !!
+2024-07-15T11:02:26.171+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:02:26.179+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T11:02:26.180+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] .p.n.c.AirtelComplianceOfficerController : Verification details
+2024-07-15T11:02:41.384+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.project.npp.controller.AuthController  : signin
+2024-07-15T11:02:41.393+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:02:44.036+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:02:44.050+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T11:02:44.050+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.JioComplianceOfficerController   : Verification details
+2024-07-15T11:06:30.019+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:06:30.030+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T11:06:30.030+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.JioComplianceOfficerController   : Verification details
+2024-07-15T11:06:33.036+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:06:33.047+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T11:06:33.047+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.JioComplianceOfficerController   : Verification details
+2024-07-15T11:07:08.785+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:07:08.794+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T11:07:08.795+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.JioComplianceOfficerController   : Verification details
+2024-07-15T11:07:25.920+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:07:25.941+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T11:07:25.941+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.JioComplianceOfficerController   : Verification details updated successfully !!
+2024-07-15T11:07:25.977+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:07:25.986+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T11:07:25.986+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.JioComplianceOfficerController   : Verification details
+2024-07-15T11:07:39.322+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.project.npp.controller.AuthController  : signin
+2024-07-15T11:07:39.331+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:07:40.737+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:07:40.741+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.CustomerServiceController        : Get all customers
+2024-07-15T11:07:40.751+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T11:07:40.751+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.CustomerServiceController        : Customer found
+2024-07-15T11:07:57.824+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:07:57.845+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T11:07:57.845+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.c.CustomerServiceController        : Portrequest found
+2024-07-15T11:08:05.696+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:05.701+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.CustomerServiceController        : Submit port request
+2024-07-15T11:08:05.707+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T11:08:05.726+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.PortRequestServiceImpl   : Port request added successfully
+2024-07-15T11:08:05.726+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.CustomerServiceController        : Portrequest added successfully!
+2024-07-15T11:08:05.736+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.CustomerServiceController        : Log added successfully!
+2024-07-15T11:08:07.909+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:07.927+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T11:08:07.927+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.c.CustomerServiceController        : Portrequest found
+2024-07-15T11:08:14.979+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:14.983+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Submit port request
+2024-07-15T11:08:14.989+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T11:08:15.012+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.PortRequestServiceImpl   : Port request added successfully
+2024-07-15T11:08:15.012+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Portrequest added successfully!
+2024-07-15T11:08:15.024+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.n.c.CustomerServiceController        : Log added successfully!
+2024-07-15T11:08:16.399+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:16.418+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T11:08:16.418+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-6] c.p.n.c.CustomerServiceController        : Portrequest found
+2024-07-15T11:08:23.466+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:23.472+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.CustomerServiceController        : Get port request by ID
+2024-07-15T11:08:23.479+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T11:08:23.480+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.CustomerServiceController        : Portrequest found
+2024-07-15T11:08:37.711+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.project.npp.controller.AuthController  : signin
+2024-07-15T11:08:37.722+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:39.851+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:39.882+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T11:08:39.883+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T11:08:44.306+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:44.310+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.ComplianceOfficerController      : Get log
+2024-07-15T11:08:44.317+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T11:08:44.318+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-1] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T11:08:52.268+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:52.277+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T11:08:52.281+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:08:52.283+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:08:52.291+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T11:08:52.291+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-2] c.p.n.c.ComplianceOfficerController      : Verification details
+2024-07-15T11:08:55.342+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:55.344+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.ComplianceOfficerController      : Update log
+2024-07-15T11:08:55.355+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:08:55.358+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:08:55.363+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.u.AirtelVerificationDetailsService : Verification details added successfully !!
+2024-07-15T11:08:55.399+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T11:08:55.412+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T11:08:55.414+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T11:08:55.417+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:08:55.420+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:08:55.433+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-3] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T11:08:55.478+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:08:55.506+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T11:08:55.506+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-4] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T11:09:21.283+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:09:21.287+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.project.npp.controller.AuthController  : signin
+2024-07-15T11:09:21.295+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-5] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:10:16.113+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:10:16.124+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T11:10:16.127+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:10:16.131+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:10:16.136+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T11:10:16.136+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-7] c.p.n.c.ComplianceOfficerController      : Verification details
+2024-07-15T11:10:29.340+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:10:29.350+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T11:10:29.353+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:10:29.357+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:10:29.362+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T11:10:29.362+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-8] c.p.n.c.ComplianceOfficerController      : Verification details
+2024-07-15T11:10:30.313+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:10:30.317+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.ComplianceOfficerController      : Update log
+2024-07-15T11:10:30.327+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:10:30.330+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:10:30.335+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.u.JioVerificationDetailsService    : Verification details added successfully !!
+2024-07-15T11:10:30.384+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T11:10:30.408+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.CustomerServiceImpl      : Customer found
+2024-07-15T11:10:30.410+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.PortRequestServiceImpl   : Port request found
+2024-07-15T11:10:30.412+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:10:30.415+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.npp.service.OperatorServiceImpl      : Operator found
+2024-07-15T11:10:30.428+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-9] c.p.n.c.ComplianceOfficerController      : Log found
+2024-07-15T11:10:30.466+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.npp.service.UserEntityServiceImpl    : User found
+2024-07-15T11:10:30.492+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.service.ComplianceLogsServiceImpl  : Log found
+2024-07-15T11:10:30.492+05:30  INFO 17312 --- [npp] [http-nio-8080-exec-10] c.p.n.c.ComplianceOfficerController      : Log found

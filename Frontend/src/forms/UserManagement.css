@@ -1,0 +1,40 @@
+.h2 {
+  padding-top: 3rem;
+  font-family: 'Cambria';
+  color: #a21232;
+}
+
+.table {
+  width: 100%; /* Make the table take up the full width of its container */
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color:#a21232;
+  color: #faf9f9;
+  font-family: 'Cambria';
+  text-align: center;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #e8d8d8;
+  font-family: 'Cambria';
+  text-align: center;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color:  #faf9f9;
+  font-family: 'Cambria';
+  text-align: center;
+}
+
+.btn-default {
+  background-color: #faf9f9;
+  border-color: #a21232;
+  color: #a21232;
+  font-family: 'Cambria';
+}
+
+.btn-default:hover{
+  color: #a21232;
+}

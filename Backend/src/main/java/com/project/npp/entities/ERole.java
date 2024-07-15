@@ -1,0 +1,18 @@
+package com.project.npp.entities;
+ 
+public enum ERole {
+	
+	ROLE_SYSTEM_ADMIN,
+	
+	ROLE_CUSTOMER_SERVICE,
+	
+	ROLE_COMPLIANCE_OFFICER,
+	
+	ROLE_JIO_COMPLIANCE_OFFICER,
+	
+	ROLE_AIRTEL_COMPLIANCE_OFFICER,
+	
+	ROLE_USER,
+	
+	ROLE_DEFAULT
+}

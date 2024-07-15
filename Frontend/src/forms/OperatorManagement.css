@@ -1,0 +1,99 @@
+.container {
+  margin-top: 50px;
+  color: #a21232;
+  font-family: 'Cambria';
+}
+
+h2 {
+  padding-top: 3rem;
+  font-family: 'Cambria';
+  color: #a21232;
+}
+
+h3 {
+  font-family: 'Cambria';
+  color: #a21232;
+}
+
+p {
+  font-family: 'Cambria';
+  color: #a21232;
+}
+
+.card-container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Cambria';
+}
+
+.table {
+  margin-top: 30px;
+  font-family: 'Cambria';
+}
+
+.table thead {
+  background-color: #a21232;
+  color: #faf9f9;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #e8d8d8;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #faf9f9;
+}
+
+.table tbody tr {
+  text-align: center;
+}
+
+.table tbody tr:nth-child(odd) .btn-default {
+  border-color: #a21232;
+}
+
+.btn-default {
+  background-color: #faf9f9;
+  border-color: #a21232;
+  color: #a21232;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.btn-default:hover {
+  color: #faf9f9;
+}
+
+.btn-secondary,
+.btn-primary,
+.btn-danger {
+  background-color: #faf9f9;
+  border-color: #a21232;
+  color: #a21232;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.btn-secondary:hover,
+.btn-primary:hover,
+.btn-danger:hover {
+  color: #faf9f9;
+}
+
+.mt-4 {
+  margin-top: 1.5rem ;
+}
+
+.mx-1 {
+  margin-left: 0.25rem ;
+  margin-right: 0.25rem ;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
