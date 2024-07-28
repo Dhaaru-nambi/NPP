@@ -1,34 +1,45 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import SystemAdminService from '../services/SystemAdminService';
-import './UpdateUser.css'; // Import the custom CSS file
- 
+import './UpdateUser.css';
+
 function UpdateUser() {
   const navigate = useNavigate();
-  const { username } = useParams();
- 
+  const { userId } = useParams();
+
   const [userData, setUserData] = useState({
     username: '',
     role: ''
   });
- 
+  const [loading, setLoading] = useState(true); // Add a loading state
+  const [error, setError] = useState(null); // Add an error state
+
   useEffect(() => {
-    fetchUserDataByName(username);
-  }, [username]);
- 
-  const fetchUserDataByName = async (username) => {
+    if (userId) {
+      fetchUserDataById(userId);
+    }
+  }, [userId]);
+
+  const fetchUserDataById = async (userId) => {
     try {
-      const response = await SystemAdminService.getUser(username);
-      if (response) {
-        setUserData(response);
+      const response = await SystemAdminService.viewUsers();
+      const user = response.find((user) => user.userId.toString() === userId);
+      if (user) {
+        setUserData({
+          username: user.username,
+          role: user.role.name // Assuming the role is an object with a name property
+        });
       } else {
-        console.error('Error: User data is undefined.');
+        setError('User not found');
       }
     } catch (error) {
-      console.error('Error fetching user data : ', error);
+      setError('Error fetching user data');
+      console.error('Error fetching user data:', error);
+    } finally {
+      setLoading(false);
     }
   };
- 
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setUserData((prevUserData) => ({
@@ -36,20 +47,26 @@ function UpdateUser() {
       [name]: value
     }));
   };
- 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await SystemAdminService.updateUserRole(userData);
       navigate("/usermanagement");
     } catch (error) {
-     
-      console.error('Error updating user : ', error);
+      console.error('Error updating user:', error);
       alert(error.message || 'An error occurred while updating user.');
-   
     }
   };
- 
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
   return (
     <div className="auth-container mt-5 pt-5">
       <h2>UPDATE ROLE</h2>
@@ -60,8 +77,7 @@ function UpdateUser() {
             type="text"
             name="username"
             value={userData.username || ''}
-            onChange={handleInputChange}
-            required
+            readOnly
           />
         </div>
         <div className="form-group">
@@ -90,5 +106,5 @@ function UpdateUser() {
     </div>
   );
 }
- 
+
 export default UpdateUser;

@@ -145,7 +145,7 @@ const CustomerServiceManagement = () => {
               <td>
                 <button className="btn btn-default" onClick={() => fetchCustomer(customer.customerId)}>View</button>
                 <button className="btn btn-default"><Link to={`/update-customer/${customer.customerId}`}>Update</Link></button>
-                <button className="btn btn-default" onClick={() => deleteCustomer(customer.customerId)}>Delete</button>
+                {/* <button className="btn btn-default" onClick={() => deleteCustomer(customer.customerId)}>Delete</button> */}
               </td>
             </tr>
           ))}

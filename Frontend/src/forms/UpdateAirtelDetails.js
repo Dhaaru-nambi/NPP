@@ -56,45 +56,47 @@ const UpdateAirtelDetails = () => {
 
   return (
     <div className="container mt-5">
-      <h2>UPDATE DETAILS</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
+      <h2 className="text-center mb-4">UPDATE DETAILS</h2>
+      <form onSubmit={handleSubmit} className="card p-4 shadow-sm">
+        <div className="form-group mb-3">
           <label>Customer Identity Verified :</label>
           <select className="form-control" name="customerIdentityVerified" value={detailsData.customerIdentityVerified} onChange={handleInputChange}>
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
         </div>
-        <div className="form-group">
+        <div className="form-group mb-3">
           <label>No Outstanding Payments :</label>
           <select className="form-control" name="noOutstandingPayments" value={detailsData.noOutstandingPayments} onChange={handleInputChange}>
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
         </div>
-        <div className="form-group">
-          <label>Time Since Last Port :</label>
+        <div className="form-group mb-3">
+          <label>Time Since Last Port (months):</label>
           <input type="number" className="form-control" name="timeSinceLastPort" value={detailsData.timeSinceLastPort} onChange={handleInputChange} />
         </div>
-        <div className="form-group">
+        <div className="form-group mb-3">
           <label>Contractual Obligations Met :</label>
           <input type="text" className="form-control" name="contractualObligationsMet" value={detailsData.contractualObligationsMet} onChange={handleInputChange} />
         </div>
-        <div className="form-group">
+        <div className="form-group mb-3">
           <label>Number Status :</label>
-          <input type="text" className="form-control" name="numberStatus" value={detailsData.numberStatus} onChange={handleInputChange} />
+          <select className="form-control" name="numberStatus" value={detailsData.numberStatus} onChange={handleInputChange}>
+            <option value="ACTIVE">ACTIVE</option>
+            <option value="SUSPENDED">SUSPENDED</option>
+            <option value="DEACTIVATED">DEACTIVATED</option>
+          </select>
         </div>
-        <div className="form-group">
+        <div className="form-group mb-4">
           <label>Notification To Operator :</label>
           <select className="form-control" name="notificationToCurrentOperator" value={detailsData.notificationToCurrentOperator} onChange={handleInputChange}>
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
         </div>
-        <button type="submit" className="btn btn-primary">UPDATE</button>
-        <div className="card-footer text-center mt-3">
-          <button type="button" className="btn btn-secondary" onClick={() => navigate("/airteldetails")}>Back to Customer Management</button>
-        </div>
+        <button type="submit" className="btn btn-primary w-100 mb-3">UPDATE</button>
+        <button type="button" className="btn btn-secondary w-100" onClick={() => navigate("/airteldetails")}>Back to Customer Management</button>
       </form>
     </div>
   );

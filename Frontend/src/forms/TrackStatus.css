@@ -1,31 +1,36 @@
-.card-container {
-  width: 50%; /* Adjust width as needed */
-  max-width: 300px; /* Optional: Set a max-width for better responsiveness */
-  margin: 0 auto; /* Center the card horizontally */
+/* TrackStatus.css */
+.status-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-.custom-button {
-  background-color: #a21232; /* Default Bootstrap primary color */
-  border: none;
-  color: white;
-  padding: 0.5rem 1rem; /* Adjust padding as needed */
-  margin: 0;
-  display: inline-block;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 0.25rem;
+.profile-title {
+  background-color: #6b3d7d;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  height: 60px;
+  font-family: 'Cambria, Cochin, Georgia, Times, \'Times New Roman\'';
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.custom-button:hover {
-  background-color: #a21232; /* Darker shade for hover */
-  color: white;
+.profile-info {
+  font-family: 'Cambria, Cochin, Georgia, Times, \'Times New Roman\'';
+  color: #6b3d7d;
 }
 
-.status-container {
-  width: 50%;
-  max-width: 600px;
-  max-height: 600px;
-  margin: 20px auto; /* Center the card and add some margin for spacing */
+.card {
+  margin-top: 80px;
+  border: none; /* Remove default card border */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 1rem; /* Margin between profile information items */
 }

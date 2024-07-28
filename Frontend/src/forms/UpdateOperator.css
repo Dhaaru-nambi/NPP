@@ -1,73 +1,70 @@
-/* UpdateOperator.css */
-
 .auth-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
-  h2 {
-    padding-top: 3rem;
-    font-family: 'Cambria';
-    color: #a21232;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 1rem;
-    font-size: large;
-    font-family: 'Cambria';
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Cambria';
-    font-size: 1rem;
-  }
-  
-  button[type="submit"] {
-    width: 100%;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #a21232;
-    color: white;
-    font-family: 'Cambria';
-    font-size: 1.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #a21232;
-    color: white;
-  }
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
 
-  .card-footer {
-    margin-top: 1rem; /* Add margin to separate the buttons */
-  }
-  
-  .card-footer .btn-default {
-    width: 50%; /* Set the width of the button */
-    background-color: #a21232;
-    border-color: #a21232;
-    color: white;
-  }
-  
-  .card-footer .btn-default:hover {
-    background-color: #a21232;
-    border-color: #a21232;
-  }
+h2 {
+  padding-top: 3rem;
+  font-family: 'Cambria';
+  color: #6b3d7d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: large;
+  font-family: 'Cambria';
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Cambria';
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #6b3d7d;
+  color: white;
+  font-family: 'Cambria';
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #5a3263;
+}
+
+.card-footer {
+  margin-top: 1rem; /* Add margin to separate the buttons */
+}
+
+.card-footer .btn-default {
+  width: 50%; /* Set the width of the button */
+  background-color: #6b3d7d;
+  border-color: #6b3d7d;
+  color: white;
+}
+
+.card-footer .btn-default:hover {
+  background-color: #5a3263;
+  border-color: #5a3263;
+}

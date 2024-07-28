@@ -3,23 +3,20 @@ import { useParams, useNavigate } from 'react-router-dom';
 import SystemAdminService from '../services/SystemAdminService';
 import './UpdateOperator.css';
 
- 
 function UpdateOperator() {
   const navigate = useNavigate();
   const { operatorId } = useParams();
- 
   const [operatorData, setOperatorData] = useState({
     operatorName: '',
     contactInfo: ''
   });
- 
+
   useEffect(() => {
     fetchOperatorDataById(operatorId);
   }, [operatorId]);
- 
+
   const fetchOperatorDataById = async (operatorId) => {
     try {
-       
       const response = await SystemAdminService.getOperator(operatorId);
       if (response) {
         setOperatorData(response);
@@ -30,7 +27,7 @@ function UpdateOperator() {
       console.error('Error fetching operator data : ', error);
     }
   };
- 
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setOperatorData((prevOperatorData) => ({
@@ -38,7 +35,7 @@ function UpdateOperator() {
       [name]: value
     }));
   };
- 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -49,7 +46,7 @@ function UpdateOperator() {
       alert(error.message || 'An error occurred while updating operator.');
     }
   };
- 
+
   return (
     <div className="auth-container mt-5 pt-5">
       <h2>UPDATE OPERATOR</h2>
@@ -62,9 +59,7 @@ function UpdateOperator() {
           <label>Contact Info :</label>
           <input type="email" name="contactInfo" value={operatorData.contactInfo || ''} onChange={handleInputChange} />
         </div>
-        
-        <button type="submit">UPDATE</button>
-
+        <button type="submit" className="btn btn-default">UPDATE</button>
         <div className="card-footer text-center">
           <button className="btn btn-default" onClick={() => navigate("/operatormanagement")}>Back to Operator Management</button>
         </div>
@@ -72,5 +67,5 @@ function UpdateOperator() {
     </div>
   );
 }
- 
+
 export default UpdateOperator;

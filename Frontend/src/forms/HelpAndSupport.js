@@ -5,13 +5,13 @@ import './HelpAndSupport.css';
 const HelpAndSupport = () => {
     return (
         <div className='guide-container mt-5 pt-5'>
-            <h1 className='heading'>NUMBER PORTABILITY PORTAL HELP & SUPPORT GUIDE</h1>
+            <h1 className='heading'>PORTAFLEX HELP & SUPPORT GUIDE</h1>
  
             <div className="card">
             <div className="card-body">
             <section>
                 <h2 className='subheading'>INTRODUCTION</h2>
-                <p>Welcome to the Number Portability Portal Help and Support Guide. This document is designed to assist users in navigating and troubleshooting the Number Portability Portal effectively.</p>
+                <p>Welcome to the Portaflex Help and Support Guide. This document is designed to assist users in navigating and troubleshooting the Number Portability Portal effectively.</p>
             </section>
             </div>
             </div>
@@ -20,9 +20,9 @@ const HelpAndSupport = () => {
             <div className="card-body">
             <section>
                 <h2 className='subheading'>ACCESSING THE PORTAL</h2>
-                <p>To access the Number Portability Portal:</p>
+                <p>To access the Portaflex:</p>
                 <ul>
-                    <li>Visit the official website: <a href="http://localhost:8082/">NumberPortabilityPortal</a></li>
+                    <li>Visit the official website: <a href="http://localhost:8082/">PORTAFLEX</a></li>
                     <li>Enter your username and password to log in.</li>
                     <li>If you do not have an account, follow the registration process by clicking on "Sign Up" and providing the necessary information.</li>
                 </ul>
@@ -87,15 +87,15 @@ const HelpAndSupport = () => {
             <section>
                 <h2 className='subheading'>FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
                 <div>
-                    <p><strong>Q1: What is number portability?</strong></p>
-                    <p>A: Number portability allows you to switch from one service provider to another without changing your phone number.</p>
+                    <p><strong>Q1: What is Portaflex?</strong></p>
+                    <p>A: Portaflex allows you to switch from one service provider to another without changing your phone number.</p>
                 </div>
                 <div>
                     <p><strong>Q2: How long does the porting process take?</strong></p>
                     <p>A: The porting process typically takes between 1-7 business days, depending on the service providers involved.</p>
                 </div>
                 <div>
-                    <p><strong>Q3: Are there any charges for number portability?</strong></p>
+                    <p><strong>Q3: Are there any charges for Portaflex?</strong></p>
                     <p>A: Some service providers may charge a fee for porting your number. Check with your current and new providers for details.</p>
                 </div>
             </section>
@@ -108,7 +108,7 @@ const HelpAndSupport = () => {
                 <h2 className='subheading'>CONTACT SUPPORT</h2>
                 <p>If you need further assistance, please contact our support team:</p>
                 <ul>
-                    <li><strong>Email</strong>: <a href="mailto:support@numberportabilityportal.com">support@numberportabilityportal.com</a></li>
+                    <li><strong>Email</strong>: <a href="mailto:support@portaflex.com">support@numberportabilityportal.com</a></li>
                     <li><strong>Phone</strong>: 1-800-123-4567</li>
                     <li><strong>Live Chat</strong>: Available on the portal from 9 AM to 5 PM (EST), Monday to Friday.</li>
                 </ul>

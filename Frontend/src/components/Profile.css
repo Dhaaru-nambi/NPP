@@ -1,0 +1,29 @@
+.profile-title {
+    background-color: #6b3d7d;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    height: 60px;
+    font-family: 'Cambria', sans-serif;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-info {
+    font-family: 'Cambria', sans-serif;
+  }
+  
+  .card {
+    border: none; /* Remove default card border */
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .mb-3 {
+    margin-bottom: 1rem; /* Margin between profile information items */
+  }
+  .container .mt-5{
+    margin-top: 100px;
+  }

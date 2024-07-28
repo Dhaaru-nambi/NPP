@@ -1,0 +1,35 @@
+/* Loadingscreen.css */
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff; /* Background color */
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .rotating-logo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    animation: rotation 2s infinite linear;
+  }
+  
+  .portaflex-text {
+    font-size: 24px; /* Adjust size as needed */
+    color: #6b3d7d; /* Adjust color as needed */
+    margin-top: 20px; /* Adjust spacing as needed */
+    font-family: 'Poppins', sans-serif; /* Adjust font as needed */
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

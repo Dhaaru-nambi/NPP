@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import SystemAdminService from '../services/SystemAdminService';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -74,6 +74,10 @@ const OperatorManagement = () => {
     }
   };
 
+  const handleUpdate = (operatorId) => {
+    navigate(`/update-operator/${operatorId}`);
+  };
+
   return (
     <div className="container mt-5 pt-3">
       <h2 className="pb-3">ADD OPERATOR</h2>
@@ -109,7 +113,7 @@ const OperatorManagement = () => {
         </form>
       </div>
 
-      <table className="table table-striped table-bordered">
+      <table className="table table-striped table-bordered mt-4">
         <thead>
           <tr>
             <th className="text-center">Operator ID</th>
@@ -126,7 +130,7 @@ const OperatorManagement = () => {
               <td>{operator.contactInfo}</td>
               <td className="d-flex justify-content-center">
                 <button className="btn btn-default btn-sm mx-1" onClick={() => fetchOperator(operator.operatorId)}>View</button>
-                <Link to={`/update-operator/${operator.operatorId}`} className="btn btn-default btn-sm mx-1">Update</Link>
+                <button className="btn btn-default btn-sm mx-1" onClick={() => handleUpdate(operator.operatorId)}>Update</button>
                 <button className="btn btn-default btn-sm mx-1" onClick={() => deleteOperator(operator.operatorId)}>Delete</button>
               </td>
             </tr>
@@ -152,7 +156,6 @@ const OperatorManagement = () => {
           </div>
         </div>
       )}
-
     </div>
   );
 };
